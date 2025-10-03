@@ -3,7 +3,7 @@
 Верстка адаптивной и интерактивной страницы для карьерного квеста в рамках программы "Билет в будущее". 
 Это реальный рабочий проект, интегрированный в основной сайт Центра бизнес-образования.
 
-<a href="https://dron-olya7.github.io/ticket-to-the-future/">Ссылка на просмотр</a>
+<a href="https://dron-olya7.github.io/ticket-to-the-future/" target="_blank">Ссылка на просмотр</a>
 
 ![alt text](image.png)
 
@@ -31,5 +31,6 @@ CSS3 (Flexbox, Grid, анимации)
 <a href="https://cbo.ru/program/bilet-v-budushee-kar-ernyj-kvest-ot-biznes-vizita-k-professii">Страница</a> — Посмотреть проект в работе.
 
 <a href="https://cbo.ru/">Центр бизнес-образования</a> — Основной сайт.
+
 
 
