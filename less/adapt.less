@@ -51,15 +51,19 @@
                     margin: 0;
                     font-size: 20px;
                 }
+
+                .for-you-kurs768{
+                    display: block;
+                }
+
+                .for-you-kurs1440, .for-you-kurs375{
+                    display: none;
+                }
             }
 
-            .for-you-kurs1440, .for-you-kurs375{
-                display: none;
-            }
+            
 
-            .for-you-kurs768{
-                display: block;
-            }
+            
 
             .btn-header {
                 margin-left: 0;
@@ -788,15 +792,17 @@
     .header-new {
         min-width: 320px;
         max-width: 100vw;
-        .nav-items 
+        .nav-items {
+            ul{
+                .for-you-kurs1440, .for-you-kurs768{
+                    display: none;
+                }
 
-            .for-you-kurs1440, .for-you-kurs768{
-                display: none;
+                .for-you-kurs375{
+                    display: block;
+                }
             }
-
-            .for-you-kurs375{
-                display: block;
-            }
+        }   
 
     }
     

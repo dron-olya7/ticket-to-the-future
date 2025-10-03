@@ -62,7 +62,7 @@ body {
   color: #DDF065;
 }
 .header-new .nav-items ul .for-you-kurs768,
-.header-new .nav-items ul .for-you-kurs768 {
+.header-new .nav-items ul .for-you-kurs375 {
   display: none;
 }
 .header-new .nav-button {
@@ -1121,12 +1121,12 @@ body.no-scroll {
     margin: 0;
     font-size: 20px;
   }
-  .header-new .nav-items .for-you-kurs1440,
-  .header-new .nav-items .for-you-kurs375 {
-    display: none;
-  }
-  .header-new .nav-items .for-you-kurs768 {
+  .header-new .nav-items ul .for-you-kurs768 {
     display: block;
+  }
+  .header-new .nav-items ul .for-you-kurs1440,
+  .header-new .nav-items ul .for-you-kurs375 {
+    display: none;
   }
   .header-new .nav-items .btn-header {
     margin-left: 0;
@@ -1666,11 +1666,11 @@ body.no-scroll {
     min-width: 320px;
     max-width: 100vw;
   }
-  .header-new .nav-items .for-you-kurs1440,
-  .header-new .for-you-kurs768 {
+  .header-new .nav-items ul .for-you-kurs1440,
+  .header-new .nav-items ul .for-you-kurs768 {
     display: none;
   }
-  .header-new .for-you-kurs375 {
+  .header-new .nav-items ul .for-you-kurs375 {
     display: block;
   }
   .program-new-task {
