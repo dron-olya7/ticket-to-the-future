@@ -1,0 +1,898 @@
+// Media Query Variables
+@tablet: ~"screen and (max-width: 1200px)";
+@mobile: ~"screen and (max-width: 800px)";
+@mobile-xs: ~"screen and (max-width: 500px)";
+
+// Variables
+@primary-color: #0056c6;
+@secondary-color: #d1f6a2;
+@text-color: #1c1c1c;
+@white: #ffffff;
+@hover: #DDF065;
+@hover-background: #DDF065;
+@hover-border: #DDF065;
+@border-color: #9b9b9b;
+
+@media @tablet {
+    .container-new {
+        padding: 0 45px;
+    }
+    
+    .header-new {
+        min-width: 320px;
+        max-width: 100vw;
+        .nav-items {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            background: @primary-color;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            transition: 0.5s;
+            transform: translateY(-110%);
+            z-index: 10;
+
+            &.active {
+                transform: translateY(0);
+            }
+
+            ul {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+                padding: 0;
+
+
+                li a {
+                    margin: 0;
+                    font-size: 20px;
+                }
+            }
+
+            .btn-header {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+
+        .nav-button.burger-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            z-index: 20;
+            cursor: pointer;
+
+            .bar, .bar1, .bar2 {
+                width: 21px;
+                margin-bottom: 6px;
+                height: 2px;
+                background-color: #fff;
+                border-radius: 0.5rem;
+                transition: 0.3s;
+            }
+
+            &.change {
+                .bar {
+                    transform: translate(0, 9px) rotate(-45deg);
+                    width: 22px;
+                }
+                
+                .bar1 {
+                    opacity: 0;
+                    width: 0;
+                }
+                
+                .bar2 {
+                    transform: translate(0, -7px) rotate(45deg);
+                    width: 22px;
+                }
+            }
+        }
+    }
+    
+    .goal-setting-and-time-management {
+        gap: 20px;
+        padding: 150px 0 60px 0;
+        text-align: left;
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 0;
+        }
+
+        .btns-group {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+           
+        }
+        .trening {
+            text-align: left;
+        }
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+    
+    h2 {
+  
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .company {
+        padding: 60px 0;
+
+        .company-items {
+            gap: 20px;
+            padding-bottom: 60px;
+
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    .why-choose {
+        padding: 60px 0 0;
+
+        .about-you-item_left,
+        .about-you-item_right {
+            display: none;
+        }
+
+        .about-you-img {
+            padding-top: 60px;
+            
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .for-you-kurs {
+        display: none;
+        padding-top: 60px;
+
+        &-top-desc,
+        &-bottom-desc {
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+
+            p {
+                max-width: 100%;
+            }
+        }
+
+        &-gif {
+            display: none;
+        }
+
+        &-bottom-desc {
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .will-result {
+        padding-top: 40px;
+
+        .result-tasks {
+            gap: 20px;
+               
+        }
+
+        .result-task {
+            &-description {
+                width: 100%;
+                max-width: 250px;
+            }
+
+            img {
+                width: 100%;
+                height: -webkit-fill-available;
+            }
+            .result-desc{
+                width: 100%;
+            }
+        }
+    }
+
+    .why-choose{
+        display: none;
+    }
+        
+    .why-choose-mobile-mobile{
+        display: block;
+
+        .about-you-img-mobile{
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-you-img-mobile-task {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin-bottom: 50px;
+                
+            p {
+                    border: 1px solid #0056C6;
+                    text-align: center;
+                    padding: 20px;
+                    border-radius: 20px;
+                    color: #0056C6;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 17.07px;
+                    text-align: center;
+            }
+        }
+    }
+
+    .telegram {
+
+        .container-new {
+            display: flex    ;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        padding: 60px 0;
+
+        .telegram-links {
+            flex-direction: column;
+            text-align: center;
+            gap: 40px;
+
+            img {
+                max-width:100%;
+            }
+        }
+
+        .telegram-link {
+            align-items: center;
+            gap: 30px;
+                        
+            h2 {
+                text-align: center;
+                width: 100%;
+                font-size: 28px;
+            }
+            
+            p{
+                width: 100%;
+            }
+                
+        }
+    }
+
+    .expert-new {
+        padding: 60px 0;
+
+        &-image {
+            flex-direction: column;
+            padding: 30px;
+            gap: 30px;
+            text-align: center;
+        }
+    
+    }
+
+    .company-categories {
+        padding: 60px 0;
+
+        &-carts {
+            gap: 20px;
+            justify-content: center;
+        }
+
+        &-cart {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            padding: 20px;
+
+            &-desc{
+                h3{
+                    font-size: 20px;
+                }
+
+                p{
+                    font-size: 14px;
+                }
+            }
+
+            img{
+                width: 80px;
+            }
+        }
+    }
+
+    .program-new {
+        padding: 60px 0;
+
+        &-tasks {
+            gap: 20px;
+        }
+
+        &-task {
+            width: 100%;
+            max-width: 248px;
+        }
+    }
+
+    .certificate {
+        padding: 60px 0;
+
+        .container-new {
+            flex-direction: column-reverse;
+            gap: 40px;
+            text-align: center;
+        }
+
+        &-left {
+            max-width: 100%;
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        &-right img {
+            max-width: 400px;
+        }
+    }
+
+    .cost {
+        padding: 60px 0;
+
+        &-description {
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+    }
+
+    .interested {
+        padding: 60px 0;
+
+        .intrested-carts {
+            gap: 60px;
+        }
+
+        .intrested-cart {
+            width: 379px;
+
+            img {
+                width: 100%;
+            }
+
+            span {
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .ticker {
+        &__item {
+            font-size: 21px;
+        }
+    }
+    
+    .on-min {
+        display: block;
+        text-align: left;
+    }
+
+    .on-big {
+        display: none;
+    }
+
+    .for-you-kurs_adapt768 {
+        display: block;
+        padding: 50px 0;
+        background: #0056c6;
+
+        h2{
+            color: @white;
+        }
+        .for-you-kurs-top-desc_adapt768 {
+            display: flex;
+            justify-content: center;
+            p {
+                color: #fff;
+                width: 300px;
+                text-align: center;
+                margin-bottom: 18px;
+                font-size: 16px;
+                line-height: 23.4px;
+            }   
+        }
+
+        svg {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+    }
+
+    .expert-img2 {
+        display: block;
+    }
+
+    .expert-img {
+        display: none ;
+    }
+
+    .plane{
+        &-animation{
+            @keyframes movePlane {
+                0% {
+                    left: 0;
+                    opacity: 1;
+                }
+
+                100% {
+                    left: 900px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .for-you-kurs_adapt768 {
+        display: block;
+        padding: 50px 0;
+        background: #0056c6;
+
+        h2{
+            color: @white;
+        }
+        .for-you-kurs-top-desc_adapt768 {
+            display: flex;
+            justify-content: center;
+            p {
+                color: #fff;
+                width: 300px;
+                text-align: center;
+                margin-bottom: 18px;
+                font-size: 16px;
+                line-height: 23.4px;
+            }   
+        }
+
+        svg {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+    }
+
+
+}
+
+@media @mobile{
+    .container-new {
+        padding: 0 45px;
+    }
+
+    .popup-content {
+        padding: 20px;
+    }
+    
+    .popup-header h2 {
+        font-size: 20px;
+    }
+
+    .popup-header .popup-date {
+        font-size: 20px;
+    }
+
+    .consultation-popup {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .consultation-header h2 {
+        font-size: 24px;
+    }
+
+    .materials-popup {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .materials-header h2 {
+        font-size: 24px;
+    }
+
+    .header-new {
+        padding: 10px 0;
+
+        .logo-content {
+            a:first-child img {
+                margin-right: 15px;
+                margin-left: 0;
+                max-width: 120px;
+            }
+
+            img {
+                max-width: 80px;
+            }
+        }
+        
+    }
+
+    .goal-setting-and-time-management {
+
+        flex-direction: column;
+        padding: 120px 0 40px 0;
+
+        .g-s-t-m-description {
+            .trening-rect{
+                h1 {
+                    font-size: 25px;
+                    margin-bottom: 12px;
+                }
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .btns-group {
+            flex-direction: column;
+            gap: 15px;
+
+            .btn {
+                // width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+    
+
+    h2 {
+        font-size: 28px;
+        line-height: 1.3;
+        
+    }
+
+    h3 {
+            font-size: 20px;
+            line-height: 1.4;
+    }
+
+    p {
+            font-size: 16px;
+            line-height: 1.5; 
+    }
+
+    
+
+    .company {
+   
+        padding: 40px 0;
+
+        .company-items {
+            gap: 15px;
+            padding-bottom: 40px;
+        }   
+    }
+
+    .why-choose {
+        padding: 40px 0 0;
+
+        .about-you-img img {
+            max-width: 250px;
+        }
+        
+    }
+
+    .for-you-kurs {
+  
+        padding-top: 40px;
+
+        &-top-desc p,
+        &-bottom-desc p {
+            font-size: 16px;
+        }    
+    }
+
+    .will-result {
+        .result-tasks {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .result-task {
+            width: 100%;
+            max-width: 100%;
+        }
+        
+    }
+
+    .why-choose-mobile-mobile{
+
+        .about-you-img-mobile{
+                
+            img{
+                    width: 100%;
+            }
+        }
+    }
+
+    .telegram {
+        padding: 40px 0;
+
+        .telegram-links img {
+            max-width: 100%;
+        }   
+    }
+
+    .expert-new {  
+        padding: 40px 0;
+
+        &-image {
+            padding: 20px;
+
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+
+
+    .company-categories {
+        padding: 40px 0;
+
+        &-cart {
+            flex-direction: row;
+            text-align: center;
+            padding: 15px;
+
+            &-desc {
+                width: 100%;
+
+                h3{
+                    font-size: 18px;
+                }
+            }
+
+            img{
+                width: 50px;
+            }
+        }
+    }
+
+    .program-new {
+        padding: 40px 0;
+
+        &-tasks {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &-task {
+            width: 100%;
+            max-width: 279px;
+        }
+    }
+
+    .certificate {
+
+        padding: 40px 0;
+
+        &-right img {
+            max-width: 100%;
+        }
+    }
+
+    .cost {
+
+        padding: 40px 0;
+
+        &-description {
+            gap: 30px;
+        }
+
+        .btn{
+            padding: 20px 12px;
+        }
+    }
+
+    .interested {
+        padding: 60px 0;
+
+        .intrested-carts {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .intrested-cart {
+            max-width: 100%;
+        }    
+    }
+
+    .ticker {
+        &__item {
+            font-size: 18px;
+        }
+    }
+    
+
+    #toTop {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 15px;
+    }
+
+
+    .plane{
+        &-animation{
+            @keyframes movePlane {
+                0% {
+                    left: 0;
+                    opacity: 1;
+                }
+
+                100% {
+                    left: 600px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    li{
+        font-size: 16px;
+    }
+  
+}
+
+@media @mobile-xs{
+    .container-new {
+        padding: 0 20px;
+    }
+
+    .program-new{
+        &-task {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .popup-header h2 {
+        font-size: 18px;
+    }
+
+    .popup-header .popup-date {
+        font-size: 18px;
+    }
+
+    .consultation-header h2,
+    .consultation-header .popup-date {
+        font-size: 18px;
+    }
+
+    .materials-header h2 {
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    
+    .goal-setting-and-time-management {
+        .btns-group{
+            .btn-sbm{
+                padding: 20px 10px;
+            }
+        }
+    }
+
+    .why-chooses{
+        .why-choose-carts{
+            .why-choose-cart{
+                width: 100%;
+            }
+        }
+        .btn-submit{
+            padding: 20px 10px;
+        }
+    }
+
+    .certificate {
+        &-left {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .plane{
+        &-animation{
+            @keyframes movePlane {
+                0% {
+                    left: 0;
+                    opacity: 1;
+                }
+
+                100% {
+                    left: 300px;
+                    opacity: 1;
+                }
+            }
+        }   
+    }
+
+    .for-you-kurs_adapt768 {
+        display: none;
+    }
+
+
+    .for-you-kurs_adapt375 {
+        display: block;
+        padding: 40px 0;
+        background-color: #0056C6;
+
+        h2 {
+            color: #fff;
+        }
+
+        p{
+            color: #fff;
+            text-align: center;
+            padding: 0 30px;
+        }
+
+        svg {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+
+}
+
+.on-min {
+    @media (min-width: 1201px) {
+        display: none;
+    }
+}
+
+
+.expert-img2 {
+
+    @media (min-width: 1201px) {
+        display: none;
+    }
+}
+
+
+
+
+
